@@ -1,0 +1,140 @@
+{
+    "categories": [
+        {
+            "category_img": "category_img_url_1",
+            "category_name": "Fiction",
+            "books": [
+                {
+                    "image": "book_img_url_1",
+                    "name": "The Great Gatsby",
+                    "author_name": "F. Scott Fitzgerald",
+                    "quantity": 25,
+                    "rating": 4.8
+                },
+                {
+                    "image": "book_img_url_2",
+                    "name": "To Kill a Mockingbird",
+                    "author_name": "Harper Lee",
+                    "quantity": 20,
+                    "rating": 4.7
+                },
+                {
+                    "image": "book_img_url_3",
+                    "name": "1984",
+                    "author_name": "George Orwell",
+                    "quantity": 30,
+                    "rating": 4.6
+                },
+                {
+                    "image": "book_img_url_4",
+                    "name": "The Catcher in the Rye",
+                    "author_name": "J.D. Salinger",
+                    "quantity": 15,
+                    "rating": 4.5
+                }
+            ]
+        },
+        {
+            "category_img": "category_img_url_2",
+            "category_name": "Science Fiction",
+            "books": [
+                {
+                    "image": "book_img_url_5",
+                    "name": "Dune",
+                    "author_name": "Frank Herbert",
+                    "quantity": 18,
+                    "rating": 4.5
+                },
+                {
+                    "image": "book_img_url_6",
+                    "name": "Ender's Game",
+                    "author_name": "Orson Scott Card",
+                    "quantity": 22,
+                    "rating": 4.4
+                },
+                {
+                    "image": "book_img_url_7",
+                    "name": "Neuromancer",
+                    "author_name": "William Gibson",
+                    "quantity": 12,
+                    "rating": 4.3
+                },
+                {
+                    "image": "book_img_url_8",
+                    "name": "The Hunger Games",
+                    "author_name": "Suzanne Collins",
+                    "quantity": 28,
+                    "rating": 4.6
+                }
+            ]
+        },
+        {
+            "category_img": "category_img_url_3",
+            "category_name": "Mystery",
+            "books": [
+                {
+                    "image": "book_img_url_9",
+                    "name": "The Da Vinci Code",
+                    "author_name": "Dan Brown",
+                    "quantity": 14,
+                    "rating": 4.2
+                },
+                {
+                    "image": "book_img_url_10",
+                    "name": "Gone Girl",
+                    "author_name": "Gillian Flynn",
+                    "quantity": 16,
+                    "rating": 4.3
+                },
+                {
+                    "image": "book_img_url_11",
+                    "name": "The Girl with the Dragon Tattoo",
+                    "author_name": "Stieg Larsson",
+                    "quantity": 20,
+                    "rating": 4.4
+                },
+                {
+                    "image": "book_img_url_12",
+                    "name": "Sherlock Holmes",
+                    "author_name": "Arthur Conan Doyle",
+                    "quantity": 24,
+                    "rating": 4.7
+                }
+            ]
+        },
+        {
+            "category_img": "category_img_url_4",
+            "category_name": "Non-Fiction",
+            "books": [
+                {
+                    "image": "book_img_url_13",
+                    "name": "Sapiens: A Brief History of Humankind",
+                    "author_name": "Yuval Noah Harari",
+                    "quantity": 19,
+                    "rating": 4.8
+                },
+                {
+                    "image": "book_img_url_14",
+                    "name": "The Immortal Life of Henrietta Lacks",
+                    "author_name": "Rebecca Skloot",
+                    "quantity": 17,
+                    "rating": 4.6
+                },
+                {
+                    "image": "book_img_url_15",
+                    "name": "Becoming",
+                    "author_name": "Michelle Obama",
+                    "quantity": 21,
+                    "rating": 4.7
+                },
+                {
+                    "image": "book_img_url_16",
+                    "name": "Sapiens: A Brief History of Humankind",
+                    "author_name": "Yuval Noah Harari",
+                    "quantity": 19,
+                    "rating": 4.8
+                }
+            ]
+        }
+    ]
+}
