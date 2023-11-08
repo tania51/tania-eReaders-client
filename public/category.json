@@ -1,0 +1,178 @@
+[
+    {
+        "id": 1,
+        "category_name": "Fiction",
+        "image": "https://i.ibb.co/pP5Ws23/great-fatsby.webp",
+        "name": "The Great Gatsby",
+        "author_name": "F. Scott Fitzgerald",
+        "quantity": 25,
+        "rating": 4.8,
+        "short_description": "A classic novel about the American Dream, excess, and disillusionment during the Roaring Twenties.",
+        "long_description": "The Great Gatsby is a novel by F. Scott Fitzgerald that tells the story of Jay Gatsby, a wealthy and mysterious man, and his love for the beautiful Daisy Buchanan. Set during the Roaring Twenties, the novel explores themes of the American Dream, excess, and the disillusionment of the era. Gatsby's extravagant parties and his relentless pursuit of an unattainable dream reveal the dark underbelly of the Jazz Age. Fitzgerald's writing is known for its lyrical prose and vivid portrayal of a bygone era."
+    },
+    {
+        "id": 2,
+        "category_name": "Fiction",
+        "image": "https://i.ibb.co/48RmgcL/to-kill-mockingbird2.jpg",
+        "name": "To Kill a Mockingbird",
+        "author_name": "Harper Lee",
+        "quantity": 20,
+        "rating": 4.7,
+        "short_description": "A powerful and thought-provoking story of racial injustice and moral growth in the American South.",
+        "long_description": "To Kill a Mockingbird is a novel by Harper Lee that takes place in the 1930s in the racially divided town of Maycomb, Alabama. It follows the experiences of Scout Finch, her brother Jem, and their father, Atticus, who is a lawyer defending a black man accused of raping a white woman. The novel explores themes of racial injustice, moral growth, and empathy. It has become a classic of modern American literature, known for its compelling characters and deep social commentary."
+    },
+    {
+        "id": 3,
+        "category_name": "Fiction",
+        "image": "https://i.ibb.co/Lhh56Mg/27bookorwell-jumbo.webp",
+        "name": "1984",
+        "author_name": "George Orwell",
+        "quantity": 30,
+        "rating": 4.6,
+        "short_description": "A dystopian classic that warns of the dangers of totalitarianism and thought control in a bleak future society.",
+        "long_description": "1984 is a dystopian novel by George Orwell, set in a totalitarian society where the ruling Party controls every aspect of life, even thoughts. The story follows Winston Smith, a low-ranking member of the Party who begins to rebel against the oppressive regime. The novel explores themes of totalitarianism, surveillance, and the loss of individual freedom. It's a chilling and thought-provoking work that continues to be relevant today."
+    },
+    {
+        "id": 4,
+        "category_name": "Fiction",
+        "image": "https://i.ibb.co/C78LQ7C/the-catcher-in-the-rye-book-review.jpg",
+        "name": "The Catcher in the Rye",
+        "author_name": "J.D. Salinger",
+        "quantity": 15,
+        "rating": 4.5,
+        "short_description": "A coming-of-age novel that follows the journey of Holden Caulfield through the streets of New York City.",
+        "long_description": "The Catcher in the Rye is a coming-of-age novel by J.D. Salinger. It follows the journey of Holden Caulfield, a disenchanted and rebellious teenager, as he wanders through the streets of New York City. The novel explores themes of alienation, innocence, and the search for authenticity in a world that seems phony. Holden's distinctive voice and his observations on society have made this novel a classic of adolescent literature."
+    },
+    {
+        "id": 5,
+        "category_name": "Science Fiction",
+        "image": "https://i.ibb.co/DGTn4bR/dune5.webp",
+        "name": "Dune",
+        "author_name": "Frank Herbert",
+        "quantity": 18,
+        "rating": 4.5,
+        "short_description": "A science fiction epic set in a distant future, where politics, religion, and power collide on a desert planet.",
+        "long_description": "Dune is a science fiction novel by Frank Herbert, set in a distant future where interstellar travel and political intrigue are the norm. The story takes place on the desert planet of Arrakis, the only source of the most valuable substance in the universe, melange (also known as spice). The novel explores themes of politics, religion, and ecological sustainability. It's a rich and complex narrative that has captivated readers for decades."
+    },
+    {
+        "id": 6,
+        "category_name": "Science Fiction",
+        "image": "https://i.ibb.co/Mf7HZMV/ender-s-game.jpg",
+        "name": "Ender's Game",
+        "author_name": "Orson Scott Card",
+        "quantity": 22,
+        "rating": 4.4,
+        "short_description": "A young genius is recruited to train for a future war against an alien race in this gripping science fiction novel.",
+        "long_description": "Ender's Game is a science fiction novel by Orson Scott Card that follows the story of Andrew 'Ender' Wiggin, a brilliant child who is recruited to attend Battle School, where he trains to fight against an alien species known as the Formics. The novel explores themes of leadership, warfare, and the moral consequences of conflict. It's a thrilling and thought-provoking tale."
+    },
+    {
+        "id": 7,
+        "category_name": "Science Fiction",
+        "image": "https://i.ibb.co/frZ5MMY/Neuromancer-by-William-Gibson-Review.jpg",
+        "name": "Neuromancer",
+        "author_name": "William Gibson",
+        "quantity": 12,
+        "rating": 4.3,
+        "short_description": "A groundbreaking cyberpunk novel that takes readers into a world of hacking, AI, and virtual reality.",
+        "long_description": "Neuromancer is a groundbreaking cyberpunk novel by William Gibson. It introduces readers to a future where hacking, artificial intelligence, and virtual reality are central to the narrative. The story follows Case, a washed-up computer hacker who is hired for one last job. The novel explores themes of technology, identity, and the blurred lines between humans and machines. It's a must-read for fans of science fiction and cyberpunk."
+    },
+    {
+        "id": 8,
+        "category_name": "Science Fiction",
+        "image": "https://i.ibb.co/W2mGjss/hunger-game.webp",
+        "name": "The Hunger Games",
+        "author_name": "Suzanne Collins",
+        "quantity": 28,
+        "rating": 4.6,
+        "short_description": "In a dystopian future, teenagers are forced to fight to the death in a televised spectacle for the entertainment of the ruling class.",
+        "long_description": "The Hunger Games is a dystopian science fiction novel by Suzanne Collins. It is set in a future society where children are selected to participate in the Hunger Games, a televised event where they must fight to the death. The story follows Katniss Everdeen, a young girl from a poor district who becomes a symbol of resistance against the oppressive Capitol. The novel explores themes of survival, inequality, and the consequences of mass media. It's a gripping and thought-provoking tale."
+    },
+    {
+        "id": 9,
+        "category_name": "Mystery",
+        "image": "https://i.ibb.co/X7kzB2C/89728638-davinci-new-cover-jpg.webp",
+        "name": "The Da Vinci Code",
+        "author_name": "Dan Brown",
+        "quantity": 14,
+        "rating": 4.2,
+        "short_description": "A thrilling mystery that combines art, history, and religion in a quest for hidden secrets and a compelling conspiracy.",
+        "long_description": "The Da Vinci Code is a mystery novel by Dan Brown that follows the Harvard symbologist Robert Langdon and cryptologist Sophie Neveu as they try to solve a murder that leads them to a series of clues hidden in famous works of art. The novel explores themes of art, history, and religion while uncovering a compelling conspiracy. It's a fast-paced and engaging story that has captured the imaginations of readers worldwide."
+    },
+    {
+        "id": 10,
+        "category_name": "Mystery",
+        "image": "https://i.ibb.co/3sh8r6t/41wjn-Fxdxn-L-SY445-SX342.jpg",
+        "name": "Gone Girl",
+        "author_name": "Gillian Flynn",
+        "quantity": 16,
+        "rating": 4.3,
+        "short_description": "A psychological thriller about the mysterious disappearance of a wife and the secrets that unravel in the search for the truth.",
+        "long_description": "Gone Girl is a psychological thriller by Gillian Flynn that delves into the complexities of a troubled marriage. When Amy Dunne disappears on her fifth wedding anniversary, her husband Nick becomes the prime suspect. The novel explores themes of love, deception, and the dark side of relationships. It's a gripping and suspenseful story that keeps readers guessing until the very end."
+    },
+    {
+        "id": 11,
+        "category_name": "Mystery",
+        "image": "https://i.ibb.co/6FwgnBV/6931-FEB4-4-CE2-4-A3-C-A434-3-DB778-A1-C594-Img400.jpg",
+        "name": "The Girl with the Dragon Tattoo",
+        "author_name": "Stieg Larsson",
+        "quantity": 20,
+        "rating": 4.4,
+        "short_description": "A gripping mystery that follows a journalist and a hacker as they investigate a decades-old disappearance in a wealthy family.",
+        "long_description": "The Girl with the Dragon Tattoo is a mystery novel by Stieg Larsson that follows journalist Mikael Blomkvist and computer hacker Lisbeth Salander as they investigate the decades-old disappearance of Harriet Vanger, a member of a wealthy and secretive family. The novel explores themes of corruption, family secrets, and the pursuit of justice. It's a dark and compelling story that has gained widespread acclaim."
+    },
+    {
+        "id": 12,
+        "category_name": "Mystery",
+        "image": "https://i.ibb.co/WPk6s2Z/sherlock-holmes-and-count-dracula.webp",
+        "name": "Sherlock Holmes",
+        "author_name": "Arthur Conan Doyle",
+        "quantity": 24,
+        "rating": 4.7,
+        "short_description": "A collection of classic detective stories featuring the brilliant detective Sherlock Holmes and his loyal friend Dr. Watson.",
+        "long_description": "Sherlock Holmes is a collection of classic detective stories by Sir Arthur Conan Doyle. The tales follow the brilliant detective Sherlock Holmes and his loyal friend Dr. John Watson as they solve a series of intriguing cases in Victorian London. The stories explore themes of logic, deduction, and the art of observation. Sherlock Holmes has become one of the most iconic fictional detectives in literary history."
+    },
+    {
+        "id": 13,
+        "category_name": "Non-Fiction",
+        "image": "https://i.ibb.co/PzhWNLs/Sapiens-600x701.png",
+        "name": "Sapiens: A Brief History of Humankind",
+        "author_name": "Yuval Noah Harari",
+        "quantity": 19,
+        "rating": 4.8,
+        "short_description": "An exploration of the history of the human species, from the emergence of Homo sapiens to the present day.",
+        "long_description": "Sapiens: A Brief History of Humankind is a non-fiction book by Yuval Noah Harari that offers a sweeping overview of the history of the human species. From the emergence of Homo sapiens to the present day, the book explores the key events and developments that have shaped our world. It delves into themes of culture, politics, and the impact of technology on human society. It's a thought-provoking and insightful work."
+    },
+    {
+        "id": 14,
+        "category_name": "Non-Fiction",
+        "image": "https://i.ibb.co/8zLMWmk/30424205627-1544dfe41b-o.jpg",
+        "name": "The Immortal Life of Henrietta Lacks",
+        "author_name": "Rebecca Skloot",
+        "quantity": 17,
+        "rating": 4.6,
+        "short_description": "A true story about the woman behind HeLa cells, which have been instrumental in medical research for decades.",
+        "long_description": "The Immortal Life of Henrietta Lacks is a non-fiction book by Rebecca Skloot that tells the story of Henrietta Lacks, an African American woman whose cancer cells, known as HeLa cells, were taken without her knowledge and became instrumental in medical research. The book explores themes of medical ethics, race, and the impact of scientific discovery on the Lacks family. It's a moving and informative account of a remarkable scientific and ethical journey."
+    },
+    {
+        "id": 15,
+        "category_name": "Non-Fiction",
+        "image": "https://i.ibb.co/Ptp3gVC/470.webp",
+        "name": "Becoming",
+        "author_name": "Michelle Obama",
+        "quantity": 21,
+        "rating": 4.7,
+        "short_description": "The memoir of Michelle Obama, the former First Lady of the United States, offering insights into her life, values, and experiences.",
+        "long_description": "Becoming is the memoir of Michelle Obama, the former First Lady of the United States. In this book, she shares her personal journey, from her childhood on the South Side of Chicago to her years in the White House. The memoir explores her values, her experiences, and her role as a mother and a public figure. It's an intimate and inspiring account of her life and the impact she has had on the world."
+    },
+    {
+        "id": 16,
+        "image": "https://i.ibb.co/7kd5n3J/pride-and-prejudice-9781499806250-lg.jpg",
+        "name": "Pride and Prejudice",
+        "author_name": "Jane Austen",
+        "quantity": 25,
+        "rating": 4.7,
+        "short_description": "A timeless classic exploring love, class, and societal expectations in 19th-century England.",
+        "long_description": "Pride and Prejudice, written by Jane Austen, is a timeless classic that explores themes of love, class, and societal expectations in 19th-century England. The novel follows the headstrong Elizabeth Bennet and her complex relationship with the enigmatic Mr. Darcy.",
+        "category_name": "Non-Fiction"
+    }
+]
