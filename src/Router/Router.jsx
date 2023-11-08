@@ -31,7 +31,8 @@ import ReturnBook from "../components/ReturnBook";
         },
         {
             path: "/allBooks",
-            element: <AllBooks></AllBooks>
+            element: <AllBooks></AllBooks>,
+            loader: () => fetch('http://localhost:5008/api/v1/category-books/category_name')
         },
         {
             path: "/borrowedBooks",

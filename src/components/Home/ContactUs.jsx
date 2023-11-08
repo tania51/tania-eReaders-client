@@ -8,7 +8,7 @@ const ContactUs = () => {
             <div className="text-center">
                 <Title>Send Us a Message</Title>
             </div>
-            <form className="card-body px-14 py-12 bg-rose-100 rounded-2xl">
+            <form className="card-body px-14 py-12 bg-rose-100 rounded-2xl night-form">
                 <div className="flex gap-6">
                     <div className="form-control flex-1">
                         <label className="label">

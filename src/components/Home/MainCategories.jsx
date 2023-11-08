@@ -22,7 +22,7 @@ const MainCategories = ({categoryInfo}) => {
                         <div className="card-body">
                             <h2 className="card-title justify-center pb-3">{book?.category_name}</h2>
                             <div className="justify-stretch">
-                                <Link to={`/categories/${book?.category_name}`}><button className="btn btn-block bg-gradient-to-r from-rose-500 via-rose-600 to-rose-500 text-white hover:text-gray-300">See Books</button></Link>
+                                <Link to={`/categories/${book?.category_name}`}><button className="btn btn-block border-none bg-gradient-to-r from-rose-500 via-rose-600 to-rose-500 text-white hover:text-gray-300">See Books</button></Link>
                             </div>
                         </div>
                     </div>
