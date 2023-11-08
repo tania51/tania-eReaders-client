@@ -13,8 +13,8 @@ const MainCategories = ({categoryInfo}) => {
 
     return (
         <div>
-            <div><Title>Book Categories</Title></div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
+            <div><Title>BOOK CATEGORIES...</Title></div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-9"  data-aos="fade-up">
             {
                 categoryInfo && categoryInfo.map(book => <div className="p-2 border border-rose-500 rounded-sm" key={book._id}>
                     <div className="card rounded-sm h-96">

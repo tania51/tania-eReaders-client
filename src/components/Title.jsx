@@ -3,8 +3,8 @@
 const Title = ({ children }) => {
     return (
         <div>
-            <div>
-                <h3 className="text-red-800 font-bold text-3xl">{children}</h3>
+            <div className="pb-8">
+                <h3 className="text-rose-600 font-semibold text-3xl uppercase">{children}</h3>
             </div>
         </div>
     );

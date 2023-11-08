@@ -1,17 +1,41 @@
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import './Banner.css'
+
+
 
 const Banner = () => {
     return (
-        <div className="hero min-h-[60vh]" style={{ backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)' }}>
-            <div className="hero-overlay bg-opacity-60"></div>
-            <div className="hero-content text-center text-neutral-content">
-                <div className="max-w-md">
-                    <h1 className="mb-5 text-5xl font-bold">Hello There</h1>
-                    <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button className="btn btn-primary">Get Started</button>
+        <>
+            <Swiper
+                spaceBetween={30}
+                centeredSlides={true}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
+                pagination={{
+                    clickable: true,
+                }}
+                navigation={true}
+                modules={[Autoplay, Pagination, Navigation]}
+                className="mySwiper"
+            >
+                <div>
+                    <SwiperSlide><img src="https://i.ibb.co/d6xtwNN/30-eastleigh-library-1200x400.png" alt="" /></SwiperSlide>
+                    <SwiperSlide><img src="https://i.ibb.co/bsY7Vn8/Free-Book.jpg" alt="" /></SwiperSlide>
+                    <SwiperSlide><img src="https://i.ibb.co/sFQK9QF/gh-book-roundup-self-help-books-1675440173.png" alt="" /></SwiperSlide>
+                    <SwiperSlide><img src="https://i.ibb.co/3r4pj3G/Killers-of-the-Flower-Moon-PRH-site-1200x628.jpg" alt="" /></SwiperSlide>
                 </div>
-            </div>
-        </div>
+            </Swiper>
+        </>
     );
 };
 
