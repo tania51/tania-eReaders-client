@@ -12,6 +12,7 @@ import ErrorPage from "../Pages/ErrorPage";
 import SingleCategoryBooks from "../components/Categories/SingleCategoryBooks";
 import BookDetails from "../components/Categories/BookDetails";
 import ReturnBook from "../components/ReturnBook";
+import ReadBook from "../components/ReadBook";
 
   const router = createBrowserRouter([
     {
@@ -51,6 +52,11 @@ import ReturnBook from "../components/ReturnBook";
           path: "/return/:id",
           element: <ReturnBook></ReturnBook>,
           loader: ({params}) => fetch(`http://localhost:5008/api/v1/category-books/category_name/${params.id}`)
+        },
+        {
+          path: "/read/:id",
+          element: <ReadBook></ReadBook>,
+          loader: () => fetch('http://localhost:5008/api/v1/category-books/category_name')
         }
       ],
     },

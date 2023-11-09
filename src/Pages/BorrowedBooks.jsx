@@ -12,38 +12,29 @@ import Button from "../components/Button";
 const BorrowedBooks = () => {
     const singleBook = useLoaderData();
     // console.log(singleBook);
-    const [allBook, setAllBook] = useState(singleBook)
+    const [allBook, setAllBook] = useState()
+    const [emptyPage, setEmptyPage] = useState('')
     // console.log(allBook);
 
     const { user } = useAuth();
     const currentUserEmail = user?.email;
-    // console.log(currentUserEmail);
-
-
-
-
-    // get book for display
-    // useEffect( () => {
-    //     axios.get(`http://localhost:5008/api/v1/borrow-books/${currentUserEmail}`)
-    //     .then(res => setAllBook(res.data))
-    //     .catch(err => console.log(err.message))
-    // }, [currentUserEmail])
-    // console.log(allBook);
+    console.log(currentUserEmail);
 
     
-    // const borrowedBook = allBook && allBook.filter(aBook => aBook?.userEmail === currentUserEmail)
 
+    
 
-    // setNewBook(borrowedBook)
+    const { _id, id, author_name, category_name, image, long_description, name, rating, short_description, quantity, return_data, userEmail } = singleBook;
+    // console.log(singleBook);
+    const borrowedBooks = singleBook.filter(book => book?.userEmail === currentUserEmail)
+    // console.log(allBook);
 
-    const { _id, id, author_name, category_name, image, long_description, name, rating, short_description, quantity, return_data } = singleBook;
-    console.log(singleBook);
     
     // console.log(_id, id);
 
 
     const userName = user?.displayName;
-    const userEmail = user?.email;
+    const user2Email = user?.email;
     // const {displayName, email} = user;
     // console.log(userName, userEmail);
 
@@ -131,7 +122,7 @@ const BorrowedBooks = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {
-                allBook && allBook.map((book) => {
+                typeof borrowedBooks !== 'undefined' ? borrowedBooks.map((book) => {
                     return <div key={book?._id}>
                         <div className="card bg-red-100 shadow-xl">
                             <figure><img className="object-fill h-56 w-full" src={book?.image} alt="Shoes" /></figure>
@@ -150,6 +141,8 @@ const BorrowedBooks = () => {
                         </div>
                     </div>
                 })
+                :
+                <p>No book borrowed. Please add some book first..</p>
             }
         </div>
         </div>

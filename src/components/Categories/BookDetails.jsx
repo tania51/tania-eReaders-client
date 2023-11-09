@@ -3,6 +3,7 @@
 import { Link, useLoaderData } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import Button from "../Button";
+import Swal from "sweetalert2";
 
 
 
@@ -70,7 +71,7 @@ const BookDetails = () => {
 
 
         // post
-        if(newObj) {
+        if(!newObj) {
             fetch(`http://localhost:5008/api/v1/borrow-books`, {
             method: 'POST',
             headers: {
@@ -79,10 +80,20 @@ const BookDetails = () => {
             body: JSON.stringify(newObj)
         })
             .then(res => res.json())
-            .then(data => console.log('book inserted successfull', data))
+            .then(data => {
+                Swal.fire({
+                    icon: "success",
+                    text: "Borrow this book successfully"
+                  });
+                
+            })
         }
         else {
-            console.log('book already exists');
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Book already borrowed"
+              });
         }
         
 
@@ -103,10 +114,10 @@ const BookDetails = () => {
 
                         {/* borrow btn */}
                         {/* Open the modal using document.getElementById('ID').showModal() method */}
-                        <div className="w-32 flex gap-4" onClick={() => document.getElementById('my_modal_5').showModal()}>
+                        <div className="mb-4" onClick={() => document.getElementById('my_modal_5').showModal()}>
                             <Button>Borrow</Button>
-                            <Link to={`/read/${singleBook?._id}`}><Button>Read</Button></Link>
                         </div>
+                        <Link to={`/read/${singleBook?._id}`}><Button>Read</Button></Link>
                         <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
                             <div className="modal-box">
                                 {/* return date */}
@@ -118,8 +129,8 @@ const BookDetails = () => {
                                         <input className="input input-bordered" type="date" name="returnDate" />
                                         {/* <input type="email" placeholder="email" className="input input-bordered" required /> */}
                                     </div>
-                                    <div className="pt-4 flex justify-center">
-                                        <button className="btn btn-accent">Submit</button>
+                                    <div className="pt-5 flex justify-center">
+                                        <Button>Submit</Button>
                                     </div>
                                 </form>
                                 <div className="modal-action">
