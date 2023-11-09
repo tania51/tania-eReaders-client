@@ -1,6 +1,7 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import loginBg from "../assets/login-bg.jpg"
+import axios from "axios";
 
 
 const Login = () => {
@@ -34,8 +35,10 @@ const Login = () => {
 
         signIn(email, pass)
         .then(res => {
-            console.log(res.user)
-            console.log(currentLocation);
+            // console.log(res.user)
+            console.log(res.user.email);
+            // axios.post('https://e-readers-server.vercel.app/api/v1/auth/token-access', {email: res.user.email}, {withCredentials: true}, )
+
             navigate(currentLocation ? currentLocation : '/')
         })
         .catch(err => {

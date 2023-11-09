@@ -1,6 +1,7 @@
 import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import auth from "../Firebase/firebase.config";
+import axios from "axios";
 
 
 export const AuthContext = createContext();
@@ -39,7 +40,28 @@ const AuthProvider = ({ children }) => {
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser)
-            setLoading(false)
+
+            const existsUser = {email : currentUser?.email || user?.email}
+            setLoading(false);
+            
+            if(currentUser) {
+            console.log(existsUser);
+                axios.post('https://e-readers-server.vercel.app/api/v1/auth/token-access', existsUser, {withCredentials: true} )
+                .then(res => {
+                    console.log(res.data)
+                })
+                .catch(err => console.log(err))
+            }
+            else {
+                axios.post('https://e-readers-server.vercel.app/api/v1/logout', existsUser, {withCredentials: true})
+                .then(res => {
+                    console.log(res.data)
+                })
+                .catch(err => console.log(err))
+            }
+
+
+            
         })
         return () => {
             return unSubscribe();

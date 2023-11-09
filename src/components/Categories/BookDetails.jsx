@@ -53,7 +53,7 @@ const BookDetails = () => {
 
         // put
         if(userEmail !== singleBook.user_email) {
-            fetch(`http://localhost:5008/api/v1/category-books/category_name/${_id}`, {
+            fetch(`https://e-readers-server.vercel.app/api/v1/category-books/category_name/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -70,7 +70,7 @@ const BookDetails = () => {
 
         // post
         if(newObj) {
-            fetch(`http://localhost:5008/api/v1/borrow-books`, {
+            fetch(`https://e-readers-server.vercel.app/api/v1/borrow-books`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

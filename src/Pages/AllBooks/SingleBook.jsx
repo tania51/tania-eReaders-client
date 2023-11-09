@@ -1,7 +1,6 @@
 
 
 const SingleBook = ({ aBook }) => {
-    console.log(aBook);
     const {id,image} = aBook;
     return (
         <div className="p-2 border border-rose-500 rounded-sm" key={id}>

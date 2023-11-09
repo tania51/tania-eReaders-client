@@ -44,7 +44,7 @@ const useHandelQuantity = () => {
 
     // get all books from /api/v1/borrow-books
     useEffect(() => {
-        fetch('http://localhost:5008/api/v1/borrow-books')
+        fetch('https://e-readers-server.vercel.app/api/v1/borrow-books')
             .then(res => res.json())
             .then(data => {
                 setAllBooksInfo(data)
@@ -104,7 +104,7 @@ const useHandelQuantity = () => {
 
         // patch
         if (!newObj) {
-            fetch('http://localhost:5008/api/v1/borrow-books', {
+            fetch('https://e-readers-server.vercel.app/api/v1/borrow-books', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
@@ -119,7 +119,7 @@ const useHandelQuantity = () => {
         }
 
 
-        // axios.patch('http://localhost:5008/api/v1/borrow-books', newBorrowedBook)
+        // axios.patch('https://e-readers-server.vercel.app/api/v1/borrow-books', newBorrowedBook)
         //     .then(res => {
         //         console.log(res.data)
         //     })
