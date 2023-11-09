@@ -1,7 +1,8 @@
 
 
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import Button from "../Button";
 
 
 
@@ -87,22 +88,25 @@ const BookDetails = () => {
 
     }
 
-
+    console.log(singleBook);
 
     return (
         <div className="m-20">
-            <div className="hero bg-rose-100">
-                <div className="hero-content flex-col lg:flex-row">
+            <div className="hero">
+                <div className="hero-content flex-col lg:flex-row bg-rose-100 p-0">
                     <img src={singleBook?.image} className="max-w-sm rounded-lg shadow-2xl" />
-                    <div>
+                    <div className="px-10">
                         <h1 className="text-5xl font-bold">{singleBook?.name}</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <p className="py-6">{singleBook?.short_description}</p>
                         {/* <button className="btn btn-primary">Borrow</button> */}
 
 
                         {/* borrow btn */}
                         {/* Open the modal using document.getElementById('ID').showModal() method */}
-                        <button className="btn btn-accent text-white" onClick={() => document.getElementById('my_modal_5').showModal()}>Borrow</button>
+                        <div className="w-32 flex gap-4" onClick={() => document.getElementById('my_modal_5').showModal()}>
+                            <Button>Borrow</Button>
+                            <Link to={`/read/${singleBook?._id}`}><Button>Read</Button></Link>
+                        </div>
                         <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
                             <div className="modal-box">
                                 {/* return date */}

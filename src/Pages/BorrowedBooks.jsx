@@ -5,6 +5,8 @@ import useAuth from "../hooks/useAuth";
 import { useEffect, useState } from "react";
 import axios, { all } from "axios";
 import Swal from "sweetalert2";
+import Title from "../components/Title";
+import Button from "../components/Button";
 
 
 const BorrowedBooks = () => {
@@ -86,7 +88,7 @@ const BorrowedBooks = () => {
             .then(res => res.json())
             .then(data => console.log('updated borrowed book successfully', data))
 
-        console.log(_id);
+        
 
 
         // delete
@@ -123,17 +125,25 @@ const BorrowedBooks = () => {
 
 
     return (
-        <div className="px-10 py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="px-10 py-20">
+            <div className="pb-3">
+            <Title>Borrowed Books are here..</Title>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {
                 allBook && allBook.map((book) => {
                     return <div key={book?._id}>
                         <div className="card bg-red-100 shadow-xl">
-                            <figure><img src={book?.image} alt="Shoes" /></figure>
-                            <div className="card-body">
+                            <figure><img className="object-fill h-56 w-full" src={book?.image} alt="Shoes" /></figure>
+                            <div className="card-body text-black font-semibold text-lg">
                                 <h2 className="card-title">{book?.name}</h2>
-                                <p></p>
-                                <div className="card-actions justify-end">
-                                    <button onClick={() => returnHandeler(book?._id)} className="btn btn-primary">Return</button>
+                                <p>Category Name: <span className="text-rose-600">{book?.category_name}</span></p>
+                                <p>{book?.recentArrDate}</p>
+                                <p>{book?.returnDate}</p>
+                                <div className="pt-3">
+                                    <div onClick={() => returnHandeler(book?._id)}>
+                                        <Button>Return</Button>
+                                    </div>
 
                                 </div>
                             </div>
@@ -141,6 +151,7 @@ const BorrowedBooks = () => {
                     </div>
                 })
             }
+        </div>
         </div>
     );
 };
