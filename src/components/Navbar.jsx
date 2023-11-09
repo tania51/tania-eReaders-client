@@ -27,7 +27,7 @@ const Navbar = ({ children }) => {
         <NavLink to="/addBook">Add Book</NavLink>
         <NavLink to="/allBooks">All Books</NavLink>
         <NavLink to="/borrowedBooks">Borrowed Books</NavLink>
-        <NavLink className="inline" onClick={() => setMood(!mood)}>
+        <button className="inline" onClick={() => setMood(!mood)}>
             {
                 mood ? <MdNightlight className="inline-block text-blue-950 text-2xl"><script>{
                     document.getElementById('root').classList.remove('night')
@@ -38,7 +38,7 @@ const Navbar = ({ children }) => {
                         <script>{night}</script>
                     </ImSun>
             }
-        </NavLink>
+        </button>
         {
             user?.email ? <>
                 <div className="lg:flex gap-5 justify-center items-center left:0 lg:right-14 lg:absolute">

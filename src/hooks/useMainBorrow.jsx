@@ -7,7 +7,7 @@ const useMainBorrow = () => {
     const [categoryBorrowBooks, setCategoryBorrowBooks] = useState([])
 
     useEffect( () => {
-        axios.get('http://localhost:5008/api/v1/category-books')
+        axios.get('https://e-readers-server.vercel.app/api/v1/category-books')
         .then(res => {
             setCategoryBorrowBooks(res.data)
         })

@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <div className="mx-28 my-20">
+            <div className="mx-10 lg:mx-28 my-10 lg:my-20">
                 <MainCategories categoryInfo={categoryInfo}></MainCategories>
             </div>
             <AboutUs></AboutUs>

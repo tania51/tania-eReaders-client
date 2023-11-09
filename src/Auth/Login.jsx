@@ -2,6 +2,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import loginBg from "../assets/login-bg.jpg"
 import axios from "axios";
+import Swal from "sweetalert2";
 
 
 const Login = () => {
@@ -16,6 +17,10 @@ const Login = () => {
         googleSignIn()
         .then(res => {
             console.log(res.user);
+            Swal.fire({
+                icon: "success",
+                text: "Successfully loggedIn"
+              });
             navigate('/')
         })
         .catch(err => {
@@ -37,7 +42,11 @@ const Login = () => {
         .then(res => {
             // console.log(res.user)
             console.log(res.user.email);
-            // axios.post('http://localhost:5008/api/v1/auth/token-access', {email: res.user.email}, {withCredentials: true}, )
+            Swal.fire({
+                icon: "success",
+                text: "Successfully loggedIn"
+              });
+            // axios.post('https://e-readers-server.vercel.app/api/v1/auth/token-access', {email: res.user.email}, {withCredentials: true}, )
 
             navigate(currentLocation ? currentLocation : '/')
         })

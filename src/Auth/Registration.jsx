@@ -13,6 +13,10 @@ const Registration = () => {
     const googleSignInHandeler = () => {
         googleSignIn()
         .then(res => {
+            Swal.fire({
+                icon: "success",
+                text: "Successfully Created User"
+              });
             console.log(res.user);
             navigate('/')
         })
@@ -48,6 +52,10 @@ const Registration = () => {
                         photoURL: photo
                     })
                         .then(() => {
+                            Swal.fire({
+                                icon: "success",
+                                text: "Successfully Created User"
+                              });
                             console.log('profile updated successfully');
                         })
                         .catch(err => {
