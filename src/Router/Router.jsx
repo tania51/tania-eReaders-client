@@ -9,7 +9,6 @@ import Login from "../Auth/Login";
 import Layout from "../Layout/Layout";
 import Registration from "../Auth/Registration";
 import ErrorPage from "../Pages/ErrorPage";
-import PrivateRoute from "./PrivateRoute";
 import SingleCategoryBooks from "../components/Categories/SingleCategoryBooks";
 import BookDetails from "../components/Categories/BookDetails";
 import ReturnBook from "../components/ReturnBook";
@@ -27,7 +26,7 @@ import ReturnBook from "../components/ReturnBook";
         },
         {
             path: "/addBook",
-            element: <PrivateRoute><AddBook></AddBook></PrivateRoute>
+            element: <AddBook></AddBook>
         },
         {
             path: "/allBooks",
