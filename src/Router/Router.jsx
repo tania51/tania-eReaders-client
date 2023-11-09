@@ -22,7 +22,7 @@ import ReturnBook from "../components/ReturnBook";
         {
             path: "/",
             element: <Home></Home>,
-            loader: () => fetch('https://e-readers-server.vercel.app/api/v1/all-books')
+            loader: () => fetch('http://localhost:5008/api/v1/all-books')
         },
         {
             path: "/addBook",
@@ -31,12 +31,12 @@ import ReturnBook from "../components/ReturnBook";
         {
             path: "/allBooks",
             element: <AllBooks></AllBooks>,
-            loader: () => fetch('https://e-readers-server.vercel.app/api/v1/category-books/category_name')
+            loader: () => fetch('http://localhost:5008/api/v1/category-books/category_name')
         },
         {
             path: "/borrowedBooks",
             element: <BorrowedBooks></BorrowedBooks>,
-            loader: () => fetch('https://e-readers-server.vercel.app/api/v1/borrow-books')
+            loader: () => fetch('http://localhost:5008/api/v1/borrow-books')
         },
         {
           path: "/categories/:cat_name",
@@ -45,12 +45,12 @@ import ReturnBook from "../components/ReturnBook";
         {
           path: "/book-details/:id",
           element: <BookDetails></BookDetails>,
-          loader: ({params}) => fetch(`https://e-readers-server.vercel.app/api/v1/category-books/category_name/${params.id}`)
+          loader: ({params}) => fetch(`http://localhost:5008/api/v1/category-books/category_name/${params.id}`)
         },
         {
           path: "/return/:id",
           element: <ReturnBook></ReturnBook>,
-          loader: ({params}) => fetch(`https://e-readers-server.vercel.app/api/v1/category-books/category_name/${params.id}`)
+          loader: ({params}) => fetch(`http://localhost:5008/api/v1/category-books/category_name/${params.id}`)
         }
       ],
     },

@@ -37,7 +37,7 @@ const Login = () => {
         .then(res => {
             // console.log(res.user)
             console.log(res.user.email);
-            // axios.post('https://e-readers-server.vercel.app/api/v1/auth/token-access', {email: res.user.email}, {withCredentials: true}, )
+            // axios.post('http://localhost:5008/api/v1/auth/token-access', {email: res.user.email}, {withCredentials: true}, )
 
             navigate(currentLocation ? currentLocation : '/')
         })

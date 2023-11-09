@@ -46,19 +46,19 @@ const AuthProvider = ({ children }) => {
             
             if(currentUser) {
             console.log(existsUser);
-                axios.post('https://e-readers-server.vercel.app/api/v1/auth/token-access', existsUser, {withCredentials: true} )
+                axios.post('http://localhost:5008/api/v1/auth/token-access', existsUser, {withCredentials: true} )
                 .then(res => {
                     console.log(res.data)
                 })
                 .catch(err => console.log(err))
             }
-            else {
-                axios.post('https://e-readers-server.vercel.app/api/v1/logout', existsUser, {withCredentials: true})
-                .then(res => {
-                    console.log(res.data)
-                })
-                .catch(err => console.log(err))
-            }
+            // else {
+            //     axios.post('http://localhost:5008/api/v1/logout', existsUser, {withCredentials: true})
+            //     .then(res => {
+            //         console.log(res.data)
+            //     })
+            //     .catch(err => console.log(err))
+            // }
 
 
             

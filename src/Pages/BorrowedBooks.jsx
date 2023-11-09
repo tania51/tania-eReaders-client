@@ -22,7 +22,7 @@ const BorrowedBooks = () => {
 
     // get book for display
     // useEffect( () => {
-    //     axios.get(`https://e-readers-server.vercel.app/api/v1/borrow-books/${currentUserEmail}`)
+    //     axios.get(`http://localhost:5008/api/v1/borrow-books/${currentUserEmail}`)
     //     .then(res => setAllBook(res.data))
     //     .catch(err => console.log(err.message))
     // }, [currentUserEmail])
@@ -76,7 +76,7 @@ const BorrowedBooks = () => {
         const newObj = { id, author_name, category_name, image, long_description, name, rating, short_description, decreaseBook, recentArrDate, return_data, userName, userEmail }
 
         // put
-        fetch(`https://e-readers-server.vercel.app/api/v1/category-books/category_name/${_id}`, {
+        fetch(`http://localhost:5008/api/v1/category-books/category_name/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -100,7 +100,7 @@ const BorrowedBooks = () => {
             confirmButtonText: "Yes, return it!"
           }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`https://e-readers-server.vercel.app/api/v1/borrow-books/${_id}`, {
+                fetch(`http://localhost:5008/api/v1/borrow-books/${_id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())
