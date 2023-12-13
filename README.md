@@ -13,6 +13,8 @@
 * Using AOS from website, animation didn't work properly then I used it from their github and when I added CSS and Scripting link without version then It work perfectly.
 
 
+# About This Project
+
 * My website is a library management website. This is a authentication based website, without home page every pages are protected by private route so only logged in user can visit these routes. There is also a google based authentication system
 
 * Every page has header and footer without login and registration page.
