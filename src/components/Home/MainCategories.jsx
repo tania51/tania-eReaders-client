@@ -16,7 +16,9 @@ const MainCategories = ({categoryInfo}) => {
             <div><Title>BOOK CATEGORIES...</Title></div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-9"  data-aos="fade-up">
             {
-                categoryInfo && categoryInfo.map(book => <div className="p-2 border border-rose-500 rounded-sm" key={book._id}>
+                categoryInfo && categoryInfo.map(book => <div className="p-2 border border-rose-500 rounded-sm" key={book._id} data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
                     <div className="card rounded-sm h-96">
                         <figure><img src={book?.category_img} alt="Shoes" /></figure>
                         <div className="card-body">

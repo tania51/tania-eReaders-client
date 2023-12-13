@@ -21,7 +21,7 @@ const SingleCategoryBooks = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-24 mx-20">
             {
                 categoryBooks && categoryBooks.map(book => <div key={book.name}>
-                    <div className="card h-[90vh] bg-red-100 shadow-xl">
+                    <div className="card h-[90vh] bg-red-100 shadow-xl" data-aos="fade-up" data-aos-duration="3000">
                         <figure><img className="object-fill h-56 w-full" src={book?.image} alt="Shoes" /></figure>
                         <div className="card-body text-black font-semibold text-lg">
                         <h2 className="card-title">{book?.name}</h2>

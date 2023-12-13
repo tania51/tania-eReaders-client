@@ -6,7 +6,7 @@ const useCategoryBooks = () => {
     const [categoryBooks, setCategoryBooks] = useState([])
 
     useEffect( () => {
-        axios.get('https://e-readers-server.vercel.app/api/v1/category-books')
+        axios.get('http://localhost:5008/api/v1/category-books')
         .then(res => {
             setCategoryBooks(res.data)
         })
@@ -14,7 +14,7 @@ const useCategoryBooks = () => {
             console.log(err);
         })
 
-        // fetch('https://e-readers-server.vercel.app/api/v1/all-books')
+        // fetch('http://localhost:5008/api/v1/all-books')
         // .then(res => res.json())
         // .then(data=> {
         //     setAllBooks(data);
