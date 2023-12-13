@@ -24,7 +24,7 @@ import PrivateRoute from "../Router/PrivateRoute"
         {
             path: "/",
             element: <Home></Home>,
-            loader: () => fetch('http://localhost:5008/api/v1/all-books')
+            loader: () => fetch('https://e-readers-server.vercel.app/api/v1/all-books')
         },
         {
             path: "/addBook",
@@ -33,12 +33,12 @@ import PrivateRoute from "../Router/PrivateRoute"
         {
             path: "/allBooks",
             element: <PrivateRoute><AllBooks></AllBooks></PrivateRoute>,
-            loader: () => fetch('http://localhost:5008/api/v1/category-books/category_name')
+            loader: () => fetch('https://e-readers-server.vercel.app/api/v1/category-books/category_name')
         },
         {
             path: "/borrowedBooks",
             element: <PrivateRoute><BorrowedBooks></BorrowedBooks></PrivateRoute>,
-            loader: () => fetch('http://localhost:5008/api/v1/borrow-books')
+            loader: () => fetch('https://e-readers-server.vercel.app/api/v1/borrow-books')
         },
         {
           path: "/categories/:cat_name",
@@ -47,17 +47,17 @@ import PrivateRoute from "../Router/PrivateRoute"
         {
           path: "/book-details/:id",
           element: <PrivateRoute><BookDetails></BookDetails></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:5008/api/v1/category-books/category_name/${params.id}`)
+          loader: ({params}) => fetch(`https://e-readers-server.vercel.app/api/v1/category-books/category_name/${params.id}`)
         },
         {
           path: "/return/:id",
           element: <PrivateRoute><ReturnBook></ReturnBook></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:5008/api/v1/category-books/category_name/${params.id}`)
+          loader: ({params}) => fetch(`https://e-readers-server.vercel.app/api/v1/category-books/category_name/${params.id}`)
         },
         {
           path: "/read/:id",
           element: <PrivateRoute><ReadBook></ReadBook></PrivateRoute>,
-          loader: () => fetch('http://localhost:5008/api/v1/category-books/category_name')
+          loader: () => fetch('https://e-readers-server.vercel.app/api/v1/category-books/category_name')
         }
       ],
     },
